@@ -17,6 +17,9 @@
 ## LANGUAGE USED
 ### - HTML
 ### - CSS
+### - js
+### - bootstrap
+### - jQuery
 
 # CONTACTS
 ### Contact Joseph Muturi at:
