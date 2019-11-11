@@ -1,4 +1,6 @@
-## AUTHOR NAME
+ ## PIZZA PALACE
+ 
+ ## AUTHOR NAME
  ### Joseph Muturi
 
 ## DESCRIPTION
@@ -15,6 +17,11 @@
 ### - CSS
 
 # CONTACTS
+### Contact Joseph Muturi at:
+- cr.muturi@gmail.com
+- or tel: 0705977046
+
+
 
 
 
