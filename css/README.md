@@ -1,7 +1,7 @@
 ## AUTHOR NAME
  Joseph Muturi
 
-## ESCRIPTION
+## DESCRIPTION
 This is a website that allows you to customize your own type of pizza and order whatever size you want then choose to collect it yourself or pay for it to delvered
 ## SETUP/INSTALLATION
 - click the download button and clone 
