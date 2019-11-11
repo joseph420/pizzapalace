@@ -9,4 +9,6 @@ This is a website that allows you to customize your own type of pizza and order 
 ## KNOWN BUGS
 Incase of any bugs refresh your browser or restart web browser
 ## LANGUAGE USED
+- HTML
+- CSS
 
