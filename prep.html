@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="css/styles.css" rel="stylesheet" type="text/css"> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <!-- <script src="js/scripts.js"></script> -->
+  <title>Address book</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Address book</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add a contact:</h2>
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-first-name">First name</label>
+            <input type="text" class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div> <button type="submit" class="btn btn-danger">Add</button>
+        </form>
+        <h2>Contacts:</h2>
+        <ul id="contacts"> </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-contact">
+          <h2></h2>
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<style>
+  #show-contact {
+    display: none;
+  }
+  .contact {
+    cursor: pointer;
+    color: #0088cc;
+  }
+  .contact:hover {
+    /* text-decoration: underline; */
+  }
+</style>
+<script>
+  function Contact(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+  }
+  Contact.prototype.fullName = function() {
+    return this.firstName + " " + this.lastName;
+  } // user interface logic
+  $(document).ready(function() {
+    $("form#new-contact").submit(function(event) {
+      event.preventDefault();
+      var inputtedFirstName = $("input#new-first-name").val();
+      var inputtedLastName = $("input#new-last-name").val();
+      var newContact = new Contact(inputtedFirstName, inputtedLastName);
+      $("ul#contacts").append(
+        "<li><span class='contact'>" + newContact.firstName + "</span></li>");
+      $("input#new-first-name").val("");
+      $("input#new-last-name").val("");
+    });
+  });
+  $(".contact").last().click(function() {
+    $("#show-contact").show();
+    $("#show-contact h2").text(newContact.firstName);
+    $(".first-name").text(newContact.firstName);
+    $(".last-name").text(newContact.lastName);
+  });
+</script>
