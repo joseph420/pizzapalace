@@ -21,7 +21,7 @@
 - cr.muturi@gmail.com
 - or tel: 0705977046
 
-
-
+# LICENSE
+### MIT License Copyright (c) {2019}
 
 
