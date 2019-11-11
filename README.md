@@ -9,7 +9,7 @@
 ## SETUP/INSTALLATION
 ### - Connect to the internet
 ### - Download a web browser of your preference
-### - click here to open the link :https://joseph420.github.io/pizzapalace/.
+### - click here to open the link -:https://joseph420.github.io/pizzapalace/.
 
 ## KNOWN BUGS
 ### Incase of any bugs refresh your browser or restart web browser
